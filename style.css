@@ -1,4 +1,236 @@
-html{
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  outline: none;
+  font-family:  'Montserrat', sans-serif;
+  font-weight: 800;
 }
+
+html{
+  font-size: 62.5%;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ /* z-index: 100;*/
+  transition: all 0.1s;
+}
+
+.switch.container{
+  background-color: #262431;
+}
+
+
+
+.circle-bg{
+  top: -70%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120rem;
+  height: 120rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ff900b;
+  transition: all 0.1s;
+}
+.switch .circle-bg{
+  background-color: #91cdff;
+}
+
+
+.form-warpper{
+  width: 80rem;
+  height: 60rem;
+  background-color: #fff;
+  display: flex;
+  border-radius: 3rem;
+  box-shadow: 0 2rem 6rem rgba(6, 12, 15, 0.2);
+  /*position: relative;*/
+  z-index: 100;
+  transition: all .5s;
+}
+
+.switch .form-warpper{
+  background-color: #262431;
+}
+
+
+
+.form-wrapper-left{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 0 20rem 0;
+
+}
+
+.sun-moon{
+  width: 12rem;
+  height: 12rem;
+  background: linear-gradient(255deg, #ff900b, #ff505b);
+  border-radius: 50%;
+  position: relative;
+}
+.switch .sun-moon{
+  background: #91cdff;
+}
+
+.sun-moon::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: scale(0);
+  transform-origin: right top;
+  transition: transform 0.5s;
+}
+
+.switch .sun-moon::after{
+  background-color: #262831;
+  transform: scale(1);
+}
+
+.form-wrapper-left button{
+  width: 20rem;
+  height: 4rem;
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.4rem;
+  color: #777;  
+  cursor: pointer;
+  position: relative;
+
+}
+
+.switch .form-wrapper-left button{
+  background-color: #262831;
+}
+
+.form-wrapper-left button span{
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.bg{
+  background-color: #fff;
+  border-radius: 3rem;
+  left: 0;
+  box-shadow:0 0.5 1rem rgba(0, 0, 0, 0.1);
+  transition: transform .4s ; 
+}
+.switch .bg{
+  transform: translateX(100%);
+
+}
+
+.light , .dark{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light{
+  left: 0;
+}
+.dark{
+  right: 0;
+}
+
+.form-wrapper-right{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rem 0;
+
+}
+
+
+.form-wrapper-right h1{
+  font-size: 4rem;
+  color:#788 ;
+
+}
+
+.field{
+  width: 30rem;
+  height: 4rem;
+  border: none;
+  border-bottom: 0.2rem solid #bbb;
+  font-size: 1.4rem;
+  color:#555 ;
+  background-color: transparent;
+}
+.switch .field{
+  color: #fff;
+}
+
+.field::placeholder{
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #bbb;
+  letter-spacing: 0.1rem;
+
+}
+
+
+.form-wrapper-right textarea{
+  height: 10rem;
+  resize: none;
+}
+
+.form-wrapper-right button{
+
+  width: 30rem;
+  height: 4.5rem;
+  background-color: #262431;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.4rem;
+  color: #bbb;
+  text-transform: uppercase;
+  letter-spacing: 0ç1 rem;
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.switch .form-wrapper-right button{
+  background-color: #fff;
+}
+.form-wrapper-right button:active{
+
+  transform: translateY(0.2rem);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
